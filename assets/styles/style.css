@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+:root {
+    --yellow: #FFB645;
+    --black: #000000;
+    --lightBlack: #242424;
+    --white: #fff;
+    --silver: #dbdbdb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GENERALS */
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--black);
+    width: 100%;
+    height: 100px;
+    box-shadow: 0px 4px 4px #f3bb68;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+a {
+    color: var(--white);
+    transition: .2s all ease;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--yellow);
+}
+
+header .info-header {
+    background-color: var(--yellow);
+    height: 80px;
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-socials ul {
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.header-socials ul li {
+    margin: 0 30px;
+
+}
+
+
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+}
+
+header nav ul {
+    height: 100%;
+    margin: 0 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--black);
+}
+
+.carousel {
+    
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* filter: grayscale(1); */
+    
+    background-image: url("./../img/banner-1.jpg");
+    aspect-ratio: 16/9;
+    background-size: cover;
+}
+
+.carousel h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.carousel p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero a {
+    background-color: var(--yellow);
+    padding: 12px;
+    margin: 20px;
+    border-radius: 12px;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+
+}
