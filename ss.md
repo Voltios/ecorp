@@ -19,4 +19,8 @@
 6. Mergear
 
         git merge <rama inferior> (ofi)
-        
+
+7. Pullear master en la rama
+
+        git checkout ofi
+        git pull (ecorp) <master>
