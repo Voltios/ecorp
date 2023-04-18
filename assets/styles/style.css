@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
-
 :root {
     --yellow: #FFB645;
     --black: #000000;
@@ -15,13 +13,13 @@
     box-sizing: border-box;
 }
 
+
 /* GENERALS */
 
 body {
     overflow-x: hidden;
     background-color: var(--black);
-    background-image: url('https://plus.unsplash.com/premium_photo-1670044659017-efda28d1cdb7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=733&q=80');
-    
+    /*  background-image: url('https://plus.unsplash.com/premium_photo-1670044659017-efda28d1cdb7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=733&q=80'); */
 }
 
 header {
@@ -38,7 +36,6 @@ header {
 ul {
     list-style-type: none;
 }
-
 
 a {
     color: var(--white);
@@ -61,18 +58,13 @@ header .info-header {
 }
 
 .header-socials ul {
-
     display: flex;
     flex-direction: row;
-
 }
 
 .header-socials ul li {
     margin: 0 30px;
-
 }
-
-
 
 header nav {
     display: flex;
@@ -104,11 +96,9 @@ section {
 }
 
 .carousel {
-
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .carousel::before {
@@ -129,7 +119,6 @@ section {
 }
 
 .carousel h1 {
-
     color: var(--white);
     font-size: 7rem;
     font-weight: bolder;
@@ -160,7 +149,6 @@ section {
     color: white;
     text-decoration: none;
     letter-spacing: 1.5px;
-
 }
 
 .hero a:hover {
@@ -170,25 +158,20 @@ section {
 
 
 /* TEAMS */
+
 .teams {
     margin: 0 auto;
     width: 60%;
-
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
 }
 
 .team-wrapper {
     display: grid;
     gap: 50px 200px;
-    grid-template-areas:
-        ". ."
-        ". ."
-    ;
-
+    grid-template-areas: ". ." ". .";
 }
 
 .teams h2 {
@@ -196,8 +179,8 @@ section {
     font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 3rem;
     margin: 20px;
-
 }
+
 
 /* .teams h2::before {
     content: "";
@@ -229,7 +212,9 @@ section {
     filter: grayscale(0);
 }
 
+
 /* ABOUT */
+
 .about {
     width: 85%;
     margin: 0 auto;
