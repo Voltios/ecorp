@@ -75,6 +75,9 @@ h2::before {
 
 header .info-header {
     background-color: var(--yellow);
+    background-image: url('https://publitronic.es/wp-content/uploads/2023/04/Sin-titulo-1.png');
+    background-attachment: scroll;
+    background-size: cover;
     height: 80px;
     width: 100%;
     padding: 0 10px;
@@ -395,4 +398,16 @@ footer .lower {
 .whoami p a:hover {
     color: var(--white);
     cursor: pointer;
+}
+
+.col-wrapper {
+    border: 3px solid lightsalmon;
+    display: flex;
+    gap: 10px;
+}
+
+.coll {
+    height: 80px;
+    width: 80px;
+    border: 2px solid darkolivegreen;
 }
