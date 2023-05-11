@@ -75,7 +75,7 @@ h2::before {
 
 header .info-header {
     background-color: var(--yellow);
-    background-image: url('https://publitronic.es/wp-content/uploads/2023/04/Sin-titulo-1.png');
+    /* background-image: url('https://publitronic.es/wp-content/uploads/2023/04/Sin-titulo-1.png'); */
     background-attachment: scroll;
     background-size: cover;
     height: 80px;
@@ -233,7 +233,7 @@ section:first-child {
 .team {
     height: 300px;
     width: 300px;
-    border-radius: 10px;
+    border-radius: 0px;
     border: 5px solid var(--black);
 }
 
@@ -243,14 +243,58 @@ section:first-child {
 
 .team img {
     filter: grayscale(1);
-    border-radius: 5px;
+    border-radius: 0px;
     height: 100%;
     width: 100%;
-    transition: .5s all ease;
+    transition: .3s all ease;
 }
 
-.team img:hover {
+.team:hover img {
+    /* border-radius: 5px; */
     filter: grayscale(0);
+}
+
+.team {
+    background: transparent;
+    border: 2px solid;
+    padding: 10px;
+    color: #dfdfdf;
+    position: relative;
+    transition: color 0.3s;
+    z-index: 1;
+}
+
+.team:hover::before {
+    width: 0;
+}
+
+.team:hover::after {
+    height: 0;
+}
+
+.team::before,
+.team::after {
+    content: '';
+    position: absolute;
+    background: #000;
+    z-index: -1;
+    transition: all 0.3s;
+}
+
+.team::before {
+    width: calc(100% - 3rem);
+    height: calc(101% + 1rem);
+    top: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.team::after {
+    height: calc(100% - 3rem);
+    width: calc(101% + 1rem);
+    left: -0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 
@@ -305,6 +349,38 @@ section:first-child {
     height: 80%;
     width: 100%;
 }
+
+
+/* NEWS */
+
+.news {
+    width: 80%;
+    /* background-color: red; */
+    margin: 0 auto;
+}
+
+.news-wp {
+    display: flex;
+    gap: 50px;
+    margin-top: 75px;
+    justify-content: center;
+}
+
+.new {
+    height: 350px;
+    min-height: 350px;
+    width: 300px;
+    min-width: 300px;
+    /* border: 1px solid red; */
+    color: white;
+}
+
+.new img {
+    height: 55%;
+    width: 100%;
+}
+
+.new h3 {}
 
 
 /* FOOTER */
