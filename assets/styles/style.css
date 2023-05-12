@@ -147,7 +147,8 @@ section:first-child {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("http://ecorp.pro/wp-content/uploads/2023/04/IMG_4166-copia-1-e1681468688395-transformed-scaled.jpeg");
+    /* background-image: url("http://ecorp.pro/wp-content/uploads/2023/04/IMG_4166-copia-1-e1681468688395-transformed-scaled.jpeg"); */
+    background-image: url("./../img/IMG_3845.jpg");
     aspect-ratio: 16/9;
     /* filter: grayscale(1); */
     background-size: cover;
