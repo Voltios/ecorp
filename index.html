@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="desktop">
         <div class="info-header">
             <div class="info-wrapper">
 
@@ -59,6 +59,43 @@
             </ul>
         </nav>
     </header>
+    <header id="mobile" class="mobile">
+        <div id="kebab">
+            <i class="lni lni-menu"></i>
+        </div>
+        <ul>
+            <a href="#inicio">
+                <li>Inicio</li>
+            </a>
+            <a href="">
+                <li>¿Quiénes somos?</li>
+            </a>
+            <a href="">
+                <li>League of legends</li>
+            </a>
+            <a href="">
+                <li>Valorant</li>
+            </a>
+            <a href="">
+                <li>wild rift</li>
+            </a>
+            <a href="">
+                <li>Rocket league</li>
+            </a>
+            <a href="">
+                <li>Ecorp TV</li>
+            </a>
+            <a href="">
+                <li>Patrocinadores</li>
+            </a>
+            <a href="">
+                <li>La sede</li>
+            </a>
+            <a href="">
+                <li>Tienda</li>
+            </a>
+        </ul>
+    </header>
     <section class="main carousel" id="m">
         <!-- Cambiar contenedor o imagen -src- junto a -href-  -->
         <div class="carousel-item" data-order="0">
@@ -78,7 +115,7 @@
 
     </section>
 
-    <section class="teams " id="inicio">
+    <section class="teams" id="inicio">
         <h2>Nuestros equipos</h2>
         <div class="team-wrapper ">
             <div class="corner-button team t-1 ">
@@ -184,18 +221,24 @@
                     <h3>Titulo del evento</h3>
                 </div>
             </a>
-            <div class=" team new">
-                <img src="https://www.lavanguardia.com/andro4all/hero/2020/08/oie3114145ZB69B84B.jpg?width=768&aspect_ratio=16:9&format=nowebp" alt="imgen not">
-                <h3>Titulo del evento</h3>
-            </div>
-            <div class=" team new">
-                <img src="https://www.lavanguardia.com/andro4all/hero/2020/08/oie3114145ZB69B84B.jpg?width=768&aspect_ratio=16:9&format=nowebp" alt="imgen not">
-                <h3>Titulo del evento</h3>
-            </div>
-            <div class=" team new">
-                <img src="https://www.lavanguardia.com/andro4all/hero/2020/08/oie3114145ZB69B84B.jpg?width=768&aspect_ratio=16:9&format=nowebp" alt="imgen not">
-                <h3>Titulo del evento</h3>
-            </div>
+            <a href="">
+                <div class=" team new">
+                    <img src="https://www.lavanguardia.com/andro4all/hero/2020/08/oie3114145ZB69B84B.jpg?width=768&aspect_ratio=16:9&format=nowebp" alt="imgen not">
+                    <h3>Titulo del evento</h3>
+                </div>
+            </a>
+            <a href="">
+                <div class=" team new">
+                    <img src="https://www.lavanguardia.com/andro4all/hero/2020/08/oie3114145ZB69B84B.jpg?width=768&aspect_ratio=16:9&format=nowebp" alt="imgen not">
+                    <h3>Titulo del evento</h3>
+                </div>
+            </a>
+            <a href="">
+                <div class=" team new">
+                    <img src="https://www.lavanguardia.com/andro4all/hero/2020/08/oie3114145ZB69B84B.jpg?width=768&aspect_ratio=16:9&format=nowebp" alt="imgen not">
+                    <h3>Titulo del evento</h3>
+                </div>
+            </a>
             <!-- PONER JS PARA INFINITE CAROUSEL -->
 
         </div>
@@ -204,18 +247,20 @@
         <div class="upper">
             <div class="contact">
                 <h3>Contáctanos</h3>
-                <p><i class="lni lni-phone "></i> +34 123 456 789</p>
-                <p><i class="lni lni-envelope "></i> comunicacion@ecorp.pro</p>
-                <p><i class="lni lni-home "></i> C/ Doctor Fleming 3, ELCHE (Alicante) </p>
+                <p><i class="lni lni-phone"></i> <a href="tel:+34642908445">+34 123 456 789</a></p>
+                <p><i class="lni lni-envelope"></i> <a href="mailto:comunicacion@ecorp.pro">comunicacion@ecorp.pro</a>
+                </p>
+                <p><i class="lni lni-home"></i> C/ Doctor Fleming 3, ELCHE (Alicante) </p>
             </div>
             <div class="social ">
                 <h3>Síguenos en nuestras redes</h3>
                 <ul>
-                    <li><a href=" "><i class="lni lni-instagram-original "></i></a></li>
-                    <li><a href=" "><i class="lni lni-twitter-original "></i></a></li>
-                    <li><a href=" "><i class="lni lni-youtube "></i></a></li>
-                    <li><a href=" "><i class="lni lni-twitch "></i></a></li>
-                    <li><a href=" "><i class="lni lni-tiktok "></i></a></li>
+                    <li><a href="https://instagram.com/ecorp_es"><i class="lni lni-instagram-original "></i></a></li>
+                    <li><a href="https://twitter.com/ECORP_ES"><i class="lni lni-twitter-original "></i></a></li>
+                    <li><a href="https://www.youtube.com/@ECORPTV"><i class="lni lni-youtube "></i></a></li>
+                    <li><a href="https://www.twitch.tv/ecorptv"><i class="lni lni-twitch "></i></a></li>
+                    <li><a href="https://www.tiktok.com/@ecorp_es"><i class="lni lni-tiktok "></i></a></li>
+                    <li><a href="https://www.facebook.com/ECORPES"><i class="lni lni-facebook-fill "></i></a></li>
                 </ul>
             </div>
         </div>
@@ -227,9 +272,10 @@
             </p>
         </div>
         <div class="whoami ">
-            <p>Diseñado por <a>Ales Volta</a>. Todos los derechos reservados</p>
+            <p>Developed by <a>Ales Volta</a>. All rights reserved</p>
         </div>
     </footer>
+
     <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
 </body>

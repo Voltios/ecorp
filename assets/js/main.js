@@ -15,3 +15,36 @@
 //     i++;
 //     if (i > 2) i = 0;
 // }, 1000);
+
+
+
+let navegador = document.getElementById('mobile');
+console.log(navegador.children[1]);
+let opened = false;
+let orHe = navegador.style.height;
+navegador.children[0].addEventListener('click', function() {
+    if (opened) cerrar();
+    else abrir();
+})
+
+for (let nn of navegador.children[1].children) {
+    nn.addEventListener('click', function() {
+        cerrar();
+    })
+}
+
+function cerrar() {
+    navegador.style.height = orHe;
+    navegador.children[0].children[0].classList.replace('lni-plus', 'lni-menu');
+    navegador.children[0].children[0].style.transform = 'rotate(0deg)';
+    navegador.children[1].style.display = 'none';
+    opened = false;
+}
+
+function abrir() {
+    navegador.style.height = '100%';
+    navegador.children[0].children[0].style.transform = 'rotate(135deg)';
+    navegador.children[0].children[0].classList.replace('lni-menu', 'lni-plus');
+    opened = true;
+    navegador.children[1].style.display = 'flex';
+}

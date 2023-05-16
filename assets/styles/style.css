@@ -518,3 +518,136 @@ footer .lower {
     color: var(--white);
     cursor: pointer;
 }
+
+header.mobile {
+    display: none;
+    transition: .3 height ease-in-out;
+}
+
+#kebab {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 65px;
+    flex-direction: row;
+    color: #f5c84d;
+    font-size: 2.3rem;
+    padding: 20px;
+}
+
+#kebab i {
+    transition: .2s all ease;
+}
+
+header.mobile ul {
+    display: none;
+    color: white;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+    padding-top: 60px;
+    text-transform: uppercase;
+    color: #D4AF37;
+    font-weight: bold;
+    font-size: 1.4rem;
+    gap: 10px;
+}
+
+header.mobile ul a {
+    color: #D4AF37;
+}
+
+header.mobile ul a:hover {
+    color: white;
+}
+
+@media (max-width:480px) {
+    body {
+        width: 100vw;
+        /* overflow-x: auto; */
+    }
+    header.desktop {
+        display: none !important;
+    }
+    header.mobile {
+        height: 65px;
+        display: block;
+    }
+    #m {
+        width: 100vw;
+    }
+    #m img {
+        height: 100px;
+    }
+    .team-wrapper {
+        grid-template-areas: ".";
+        gap: 10px;
+    }
+    .teams {
+        height: 100%;
+    }
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .teams h2 {
+        width: 130%;
+    }
+    .teams h2::before,
+    .news h2::before {
+        top: 100px;
+    }
+    .news {
+        height: 100%;
+        margin: 100px auto;
+    }
+    .news-wp {
+        /* all: unset !important; */
+        flex-direction: column;
+        height: 100% !important;
+        justify-content: center;
+        align-items: center;
+    }
+    .new {
+        min-width: none;
+        min-height: none;
+    }
+    .sp-secondary {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .col-wrapper {
+        /* overflow: hidden; */
+        display: none;
+    }
+    footer {
+        width: 100vw;
+    }
+    .contact a {
+        color: black;
+    }
+    .contact a:hover {
+        color: white;
+    }
+    footer .upper {
+        width: 100%;
+        flex-direction: column;
+        /* margin-bottom: 20px; */
+    }
+    footer .lower {
+        text-align: center;
+        margin: 0;
+        font-size: 0.8rem;
+    }
+    .upper div {
+        height: 140px;
+    }
+    .contact p {
+        /* width: 200%; */
+    }
+    .whoami {
+        text-align: center;
+    }
+}
