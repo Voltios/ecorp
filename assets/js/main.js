@@ -48,3 +48,20 @@ function abrir() {
     opened = true;
     navegador.children[1].style.display = 'flex';
 }
+
+
+
+const url = 'https://api.twitch.tv/helix/users?login=twitchdev';
+const token = 'gsuyf62y4vpg8kgd97tx1ov8fpua3g';
+const clientId = 'izhk15bjxodkvz33zs6unif4dq7at2';
+
+fetch(url, {
+        method: 'GET',
+        headers: {
+            'Authorization': `Bearer ${token}`,
+            'Client-Id': clientId
+        }
+    })
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error(error));
