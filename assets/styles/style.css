@@ -197,7 +197,9 @@ section:first-child {
     flex-direction: column;
 }
 
-.hero a {
+.hero a,
+.us a,
+.sp a {
     width: 50%;
     margin: 20px auto;
     color: var(--black);
@@ -212,7 +214,9 @@ section:first-child {
     letter-spacing: 1.5px;
 }
 
-.hero a:hover {
+.hero a:hover,
+.us a:hover,
+.sp a:hover {
     color: var(--black);
     background-color: #f5c84d;
 }
@@ -471,6 +475,10 @@ footer .upper ul a {
     gap: 10px;
 }
 
+.contact a {
+    color: #000;
+}
+
 footer .upper ul a:hover {}
 
 footer h3 {
@@ -560,6 +568,22 @@ header.mobile ul a {
 
 header.mobile ul a:hover {
     color: white;
+}
+
+.us {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.us a {
+    width: 25%;
+}
+
+.sp {
+    margin: 70px 0;
 }
 
 @media (max-width:620px) {
